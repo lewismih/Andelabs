@@ -4,7 +4,7 @@
 class Car(object):
 
 
-    def __init__(self, name='General', model='GM' ,car_type='honda' ):
+    def __init__(self, name='General', model='GM' ,car_type='saloon' ):
         self.car_type = car_type
         self.model = model
         self.name = name
@@ -36,9 +36,6 @@ class Car(object):
             self.speed = 10 ** spd
 
         return self
-
-    
-
 
     def is_saloon(self):
         if self.car_type ==  'trailer':
