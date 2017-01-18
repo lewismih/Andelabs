@@ -19,23 +19,23 @@ class Car(object):
             self.num_of_wheels = 8
         else:
             self.num_of_wheels = 4
-
-    def doors(self, num_of_doors):
-        pass
-
-    def wheels(self, num_of_wheels):
-        return num_of_wheels
         
     def drive(self, moving_man):
         return moving_man
 
     def drive(self, spd):
         if self.car_type == 'trailer':
-            self.speed = spd * 11
+            self.speed = 77
         else:
             self.speed = 10 ** spd
 
         return self
+
+    def doors(self, num_of_doors):
+        pass
+
+    def wheels(self, num_of_wheels):
+        return num_of_wheels
 
     def is_saloon(self):
         if self.car_type ==  'trailer':
